@@ -1,0 +1,2 @@
+Student{ime='Pera', prezime='Peric', index='25/001', adresa='oktoih 1245', bodovi=95.0, polozio=true}
+Student{ime='Pera1', prezime='Peric', index='25/001', adresa='oktoih 1245', bodovi=95.0, polozio=true}
