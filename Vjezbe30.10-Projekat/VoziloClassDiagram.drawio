@@ -1,0 +1,217 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="UML Class Diagram" id="vozilo-uml-diagram">
+    <mxGraphModel dx="1554" dy="943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=60;" parent="1" vertex="1">
+          <mxGeometry x="40" y="20" width="1320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;UML Dijagram Klasa - Sistem Registracije Vozila&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="440" y="35" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-class" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="490" y="120" width="420" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-title" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Vozilo&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="vozilo-class" vertex="1">
+          <mxGeometry y="40" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-divider1" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="70" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-attr1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- proizvodjac : String&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="78" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-attr2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- godinaProizvodnje : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="104" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-attr3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- kubikaza : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="130" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-attr4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- boja : String&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="156" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-divider2" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="182" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ Vozilo(String, int, int, String)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="vozilo-class" vertex="1">
+          <mxGeometry y="190" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ iznosRegistracije() : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="216" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ getProizvodjac() : String&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="242" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ setProizvodjac(String) : void&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="268" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ get/set metode za ostale atribute...&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=2" parent="vozilo-class" vertex="1">
+          <mxGeometry y="294" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-method6" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ toString() : String&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="320" width="420" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vozilo-note" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;i&gt;Bazna klasa za sva vozila&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#666666;" parent="vozilo-class" vertex="1">
+          <mxGeometry y="346" width="420" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-class" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="580" width="380" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-title" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Automobil&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="automobil-class" vertex="1">
+          <mxGeometry y="40" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-divider1" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#d6b656;" parent="automobil-class" vertex="1">
+          <mxGeometry y="66" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-attr1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- brojVrata : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="automobil-class" vertex="1">
+          <mxGeometry y="74" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-attr2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- tipMotora : String&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="automobil-class" vertex="1">
+          <mxGeometry y="100" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-divider2" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#d6b656;" parent="automobil-class" vertex="1">
+          <mxGeometry y="126" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ Automobil(String, int, String, int, String, int)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="automobil-class" vertex="1">
+          <mxGeometry y="134" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ iznosRegistracije() : int    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#d79b00;" parent="automobil-class" vertex="1">
+          <mxGeometry y="160" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ getBrojVrata() : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="automobil-class" vertex="1">
+          <mxGeometry y="186" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ setBrojVrata(int) : void&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="automobil-class" vertex="1">
+          <mxGeometry y="212" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ getTipMotora() : String, setTipMotora(String)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=2" parent="automobil-class" vertex="1">
+          <mxGeometry y="238" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="automobil-method6" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ toString() : String    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#d79b00;" parent="automobil-class" vertex="1">
+          <mxGeometry y="264" width="380" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-class" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="480" y="580" width="380" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-title" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Kombi&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="kombi-class" vertex="1">
+          <mxGeometry y="40" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-divider1" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#9673a6;" parent="kombi-class" vertex="1">
+          <mxGeometry y="66" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-attr1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- kapacitetPutnika : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kombi-class" vertex="1">
+          <mxGeometry y="74" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-divider2" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#9673a6;" parent="kombi-class" vertex="1">
+          <mxGeometry y="100" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-method1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ Kombi(String, int, int, String, int)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="kombi-class" vertex="1">
+          <mxGeometry y="108" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-method2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ iznosRegistracije() : int    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#9673a6;" parent="kombi-class" vertex="1">
+          <mxGeometry y="134" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-method3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ getKapacitetPutnika() : int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kombi-class" vertex="1">
+          <mxGeometry y="160" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-method4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ setKapacitetPutnika(int) : void&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kombi-class" vertex="1">
+          <mxGeometry y="186" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kombi-method5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ toString() : String    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#9673a6;" parent="kombi-class" vertex="1">
+          <mxGeometry y="212" width="380" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-class" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="920" y="580" width="400" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-title" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Kamion&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="kamion-class" vertex="1">
+          <mxGeometry y="40" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-divider1" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" parent="kamion-class" vertex="1">
+          <mxGeometry y="66" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-attr1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- kapacitetTereta : float&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kamion-class" vertex="1">
+          <mxGeometry y="74" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-attr2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;- prikolica : boolean&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kamion-class" vertex="1">
+          <mxGeometry y="100" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-divider2" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" parent="kamion-class" vertex="1">
+          <mxGeometry y="126" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ Kamion(String, int, int, String, float, boolean)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" parent="kamion-class" vertex="1">
+          <mxGeometry y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ iznosRegistracije() : int    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#b85450;" parent="kamion-class" vertex="1">
+          <mxGeometry y="160" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ getKapacitetTereta() : float&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kamion-class" vertex="1">
+          <mxGeometry y="186" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ setKapacitetTereta(float) : void&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="kamion-class" vertex="1">
+          <mxGeometry y="212" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ isPrikolica() : boolean, setPrikolica(boolean)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=2" parent="kamion-class" vertex="1">
+          <mxGeometry y="238" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kamion-method6" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;+ toString() : String    &lt;i&gt;@Override&lt;/i&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#b85450;" parent="kamion-class" vertex="1">
+          <mxGeometry y="264" width="400" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-automobil" value="" style="endArrow=block;dashed=0;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.15;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#6c8ebf;" parent="1" source="automobil-class" target="vozilo-note" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="500" as="sourcePoint" />
+            <mxPoint x="760" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label-1" value="&lt;b&gt;extends&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#6c8ebf;labelBackgroundColor=#ffffff;" parent="arrow-automobil" vertex="1" connectable="0">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint x="15" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-kombi" value="" style="endArrow=block;dashed=0;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#6c8ebf;" parent="1" source="kombi-class" target="vozilo-note" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="500" as="sourcePoint" />
+            <mxPoint x="760" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label-2" value="&lt;b&gt;extends&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#6c8ebf;labelBackgroundColor=#ffffff;" parent="arrow-kombi" vertex="1" connectable="0">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-kamion" value="" style="endArrow=block;dashed=0;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.85;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#6c8ebf;" parent="1" source="kamion-class" target="vozilo-note" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="500" as="sourcePoint" />
+            <mxPoint x="760" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow-label-3" value="&lt;b&gt;extends&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#6c8ebf;labelBackgroundColor=#ffffff;" parent="arrow-kamion" vertex="1" connectable="0">
+          <mxGeometry x="-0.3" y="1" relative="1" as="geometry">
+            <mxPoint x="-15" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;align=left;verticalAlign=top;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;📋 LEGENDA&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="60" y="115" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-line1" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;-&lt;/b&gt; = private (privatni atributi)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="70" y="150" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-line2" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;+&lt;/b&gt; = public (javne metode)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="70" y="175" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-line3" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Prazna strelica&lt;/b&gt; = Nasleđivanje (extends)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="70" y="200" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-line4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;@Override&lt;/i&gt; = Prepisana (override) metoda&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="70" y="225" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-line5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Bold&lt;/b&gt; = Konstruktor&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="70" y="250" width="300" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
