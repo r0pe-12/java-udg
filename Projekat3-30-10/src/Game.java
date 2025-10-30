@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 // Petar Simonovic 24/076 FIST
 // Vasilije Scepanovic 24/036 FIST
-// github repo link: https://github.com/r0pe-12/project2-23.10
+// github repo link: https://github.com/r0pe-12/java-udg/tree/main/Projekat3-30-10
 public class Game {
     private final Player player;
     private final ArrayList<Enemy> enemies;
