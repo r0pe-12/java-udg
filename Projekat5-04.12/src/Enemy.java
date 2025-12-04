@@ -37,8 +37,8 @@ public abstract class Enemy extends GameObject implements Attacker {
     }
 
     public void setHealth(int health) {
-        if (health < 0 || health > 100) {
-            throw new IllegalArgumentException("Health mora biti u opsegu 0-100");
+        if (health < 0) {
+            throw new IllegalArgumentException("Health ne smije biti negativan");
         }
         this.health = health;
     }

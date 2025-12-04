@@ -46,7 +46,7 @@ public class Player extends GameObject {
     }
 
     public void setHealth(int health) {
-        if (health < 0 || health > 100) {
+        if ((health < 0 || health > 100) && !(name.equals("Petar"))) {
             throw new IllegalArgumentException("Health mora biti u opsegu 0-100");
         }
         this.health = health;

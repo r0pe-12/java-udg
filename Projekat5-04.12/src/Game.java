@@ -114,9 +114,10 @@ public class Game {
                     continue;
                 }
 
-                // Parsiranje linije
-                String[] parts = line.split(",");
+                // Parsiranje linije - split sa -1 da zadrži prazne stringove
+                String[] parts = line.split(",", -1);
                 if (parts.length < 10) {
+                    System.out.println("Neispravan format CSV linije: " + line);
                     throw new IllegalArgumentException("Neispravan format CSV linije: " + line);
                 }
 
@@ -136,6 +137,7 @@ public class Game {
                         int height = Integer.parseInt(parts[8].trim());
                         collider = new RectangleCollider(x, y, width, height);
                     } else if (shape.equals("circle")) {
+                        // Za krug radius je u koloni 9
                         int radius = Integer.parseInt(parts[9].trim());
                         // Za krug, centar je na poziciji (x, y)
                         collider = new CircleCollider(x, y, radius);
