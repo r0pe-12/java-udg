@@ -1,32 +1,13 @@
-public class Enemy{
+public abstract class Enemy extends GameObject implements Attacker {
     private String type;
-    private int x;
-    private int y;
-    private int width;
-    private int height;
     private int damage;
+    private int health;
 
-    public Enemy(String type, int x, int y, int width, int height, int damage) {
+    public Enemy(String type, int x, int y, Collidable collider, int damage, int health) {
+        super(x, y, collider);
         setType(type);
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
         setDamage(damage);
-    }
-
-    public Enemy(String enemyString) {
-        String[] parts = enemyString.split(";");
-        String type = parts[0];
-        String[] position = parts[1].split(",");
-        int x = Integer.parseInt(position[0]);
-        int y = Integer.parseInt(position[1]);
-        String[] dimensions = parts[2].split("x");
-        int width = Integer.parseInt(dimensions[0]);
-        int height = Integer.parseInt(dimensions[1]);
-        int damage = Integer.parseInt(parts[3]);
-
-        this(type, x, y, width, height, damage);
+        setHealth(health);
     }
 
     public String getType() {
@@ -37,7 +18,7 @@ public class Enemy{
         if (type == null || type.trim().isEmpty()) {
             throw new IllegalArgumentException("Tip neprijatelja ne smije biti prazan");
         }
-        this.type = type.trim().toLowerCase();
+        this.type = type.trim();
     }
 
     public int getDamage() {
@@ -45,57 +26,49 @@ public class Enemy{
     }
 
     public void setDamage(int damage) {
-        if (damage < 0) {
-            this.damage = 0;
-        } else {
-            this.damage = Math.min(damage, 100);
+        if (damage < 0 || damage > 100) {
+            throw new IllegalArgumentException("Damage mora biti u opsegu 0-100");
         }
+        this.damage = damage;
     }
-    public int getX() {
-        return x;
+
+    public int getHealth() {
+        return health;
     }
-    public int setX(int x) {
-        this.x = x;
-        return x;
+
+    public void setHealth(int health) {
+        if (health < 0 || health > 100) {
+            throw new IllegalArgumentException("Health mora biti u opsegu 0-100");
+        }
+        this.health = health;
     }
-    public int getY() {
-        return y;
+
+    @Override
+    public String getDisplayName() {
+        return type;
     }
-    public int setY(int y) {
-        this.y = y;
-        return y;
-    }
-    public int getWidth() {
-        return width;
-    }
-    public int setWidth(int width) {
-        this.width = width;
-        return width;
-    }
-    public int getHeight() {
-        return height;
-    }
-    public int setHeight(int height) {
-        this.height = height;
-        return height;
+
+    // Osnovna implementacija - vraća standardnu vrijednost damage-a
+    @Override
+    public int getEffectiveDamage() {
+        return damage;
     }
 
     @Override
     public String toString() {
         String threatLevel;
-        if (damage > 75) {
+        int effectiveDamage = getEffectiveDamage();
+        if (effectiveDamage > 75) {
             threatLevel = "ekstremno opasan";
-        } else if (damage > 50) {
+        } else if (effectiveDamage > 50) {
             threatLevel = "opasan";
-        } else if (damage > 25) {
+        } else if (effectiveDamage > 25) {
             threatLevel = "umjereno opasan";
         } else {
             threatLevel = "mala prijetnja";
         }
 
-        String displayType = type.substring(0, 1).toUpperCase() + type.substring(1);
-
-        return String.format("Neprijatelj: %s | Pozicija: (%d, %d) | Dimenzije: %dx%d | Napad: %d/100 (%s)",
-                displayType, x, y, width, height, damage, threatLevel);
+        return String.format("Neprijatelj: %s | Pozicija: (%d, %d) | Collider: %s | Health: %d/100 | Napad: %d (%s)",
+                type, getX(), getY(), getCollider(), health, effectiveDamage, threatLevel);
     }
 }
