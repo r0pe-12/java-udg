@@ -79,7 +79,6 @@ public class Radnik {
                 }
             }
 
-            // VAŽNO: direktno dodaj bez ponovnog snimanja
             RADNICI.add(new Radnik(id, ime, prezime, false));
         }
     }
